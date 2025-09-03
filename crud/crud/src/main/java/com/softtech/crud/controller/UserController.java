@@ -21,13 +21,13 @@ public class UserController {
     @GetMapping
     public String listUsers(Model model) {
         model.addAttribute("users", userRepository.findAll());
-        return "user/list";
+        return "users/list";
     }
 
     @GetMapping("/new")
     public String showCreateForm(Model model) {
         model.addAttribute("user", new User());
-        return "user/create";
+        return "users/create";
     }
 
     @PostMapping
@@ -40,7 +40,7 @@ public class UserController {
     public String showEditForm(@PathVariable("id") Long id, Model model) {
         model.addAttribute("user",
                 userRepository.findById(id).orElseThrow(() -> new IllegalArgumentException("Invalid user Id:" + id)));
-        return "user/edit";
+        return "users/edit";
     }
 
     @PostMapping("/update/{id}")
