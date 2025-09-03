@@ -1,0 +1,123 @@
+body {
+	--fsAddBuffer: 22px;
+}
+[id='baeldung_leaderboard_mid_1'],
+[id='baeldung_leaderboard_mid_2'],
+[id='baeldung_leaderboard_mid_3'],
+[id='baeldung_right_rail_1'],
+[id='baeldung_right_rail_2'],
+[id='baeldung_right_rail_3'],
+[id='baeldung_leaderboard_btf_1'],
+[id='baeldung_leaderboard_btf_2'],
+[id='baeldung_mobile_leaderboard_footer_1'],
+[id='baeldung_mobile_leaderboard_footer_2'],
+[id='baeldung_right_rail_4'],
+[id='baeldung_right_rail_5'],
+[id='baeldung_top_1'] {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	min-height: calc(var(--height) + var(--fsAddBuffer));
+	height: calc(var(--height) + var(--fsAddBuffer));
+	width: 100%;
+}
+[id='baeldung_leaderboard_btf_1'] {
+		--height: 280px;
+}
+[id='baeldung_leaderboard_btf_2'] {
+		--height: 280px;
+}
+[id='baeldung_leaderboard_mid_1'] {
+		--height: 280px;
+}
+[id='baeldung_leaderboard_mid_2'] {
+		--height: 280px;
+}
+[id='baeldung_leaderboard_mid_3'] {
+		--height: 280px;
+}
+[id='baeldung_mobile_leaderboard_footer_1'] {
+		--height: 280px;
+}
+[id='baeldung_mobile_leaderboard_footer_2'] {
+		--height: 280px;
+}
+[id='baeldung_top_1'] {
+		--height: 200px;
+}
+@media only screen and (min-width: 768px) {
+	[id='baeldung_leaderboard_btf_1'] {
+		--height: 280px;
+	}
+	[id='baeldung_leaderboard_btf_2'] {
+		--height: 280px;
+	}
+	[id='baeldung_leaderboard_mid_1'] {
+		--height: 280px;
+	}
+	[id='baeldung_leaderboard_mid_2'] {
+		--height: 280px;
+	}
+	[id='baeldung_leaderboard_mid_3'] {
+		--height: 280px;
+	}
+	[id='baeldung_mobile_leaderboard_footer_1'] {
+		display: none; 
+	}
+	[id='baeldung_mobile_leaderboard_footer_2'] {
+		display: none; 
+	}
+	[id='baeldung_right_rail_3'] {
+		--height: 600px;
+	}
+	[id='baeldung_right_rail_4'] {
+		--height: 600px;
+	}
+	[id='baeldung_right_rail_5'] {
+		--height: 600px;
+	}
+	[id='baeldung_top_1'] {
+		--height: 280px;
+	}
+}
+@media only screen and (min-width: 850px) {
+	[id='baeldung_leaderboard_mid_1'] {
+		--height: 280px;
+	}
+	[id='baeldung_leaderboard_mid_2'] {
+		--height: 280px;
+	}
+	[id='baeldung_leaderboard_mid_3'] {
+		--height: 280px;
+	}
+}
+@media only screen and (min-width: 860px) {
+	[id='baeldung_top_1'] {
+		--height: 280px;
+	}
+}
+@media only screen and (min-width: 1125px) {
+	[id='baeldung_top_1'] {
+		--height: 280px;
+	}
+}
+@media only screen and (min-width: 1280px) {
+	[id='baeldung_right_rail_1'] {
+		--height: 600px;
+	}
+	[id='baeldung_right_rail_2'] {
+		--height: 600px;
+	}
+}
+@media only screen and (min-width: 1535px) {
+	[id='baeldung_leaderboard_mid_1'] {
+		--height: 280px;
+	}
+	[id='baeldung_leaderboard_mid_2'] {
+		--height: 280px;
+	}
+	[id='baeldung_leaderboard_mid_3'] {
+		--height: 280px;
+	}
+}
